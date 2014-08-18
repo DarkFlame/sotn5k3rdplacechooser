@@ -346,6 +346,7 @@ html_output = True
 for winner in range(0,3):
     choice = random.choice(entries)
     # If we're outputting it into an HTML link, we need to exclude the names that don't have a tumblr URL
+    # Otherwise, they just stay a plain text string with no html attached
     if html_output and choice not in ["Tatiana Means","Joshua","NadnerbD","Snowflake Star"]:
         choice = "<a href=\"http://%s.tumblr.com\">%s</a>"%(choice, choice)
     print "      %i. "%(winner+1) + choice
