@@ -14,13 +14,13 @@ else:
 
 
 # Use these lines to test the seed yourself if you don't trust me
-# seed = 5000 # Remove this line to turn on randomness
-# print "USING PRESET SEED %i"%seed
-# print "The result will always be the same in this mode."
-# print "MODIFY Entries.py TO TURN ON RANDOMNESS"
+seed = 1408700215 # Remove this line to turn on randomness
+print "USING PRESET SEED %f"%seed
+print "The result will always be the same in this mode."
+print "MODIFY Entries.py TO TURN ON RANDOMNESS"
 
-print "Seed: %s" % seed
-random.seed(seed)
+print "Seed: %s" % int(seed)
+random.seed(int(seed))
 
 # The list of usernames of people who reblogged the post, including duplicates
 reblogs_RAW = [
